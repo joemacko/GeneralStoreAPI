@@ -11,6 +11,7 @@ namespace GeneralStoreAPI.Models
         [Key]
         public string SKU { get; set; }
 
+        [Required]
         public string Name { get; set; }
 
         public double Cost { get; set; }
