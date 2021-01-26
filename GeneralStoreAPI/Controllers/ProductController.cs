@@ -42,7 +42,7 @@ namespace GeneralStoreAPI.Controllers
         }
 
         // GET BY ID
-        // api/Product/{id}
+        // api/Product?sku={sku}
         [HttpGet]
         public async Task<IHttpActionResult> GetProductById([FromUri] string sku)
         {
@@ -55,7 +55,7 @@ namespace GeneralStoreAPI.Controllers
         }
 
         // PUT (Update)
-        // api/Product/{id}
+        // api/Product?sku={sku}
         [HttpPut]
         public async Task<IHttpActionResult> UpdateProduct([FromUri] string sku, [FromBody] Product updatedProduct)
         {
@@ -86,7 +86,7 @@ namespace GeneralStoreAPI.Controllers
         }
 
         // DELETE (Delete)
-        // api/Product/{id}
+        // api/Product?sku={sku}
         [HttpDelete]
         public async Task<IHttpActionResult> DeleteProduct([FromUri] string sku)
         {
